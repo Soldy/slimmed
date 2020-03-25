@@ -8,7 +8,7 @@ interface CollectionInterface
      /** @return int */
      public function getCurrentPage(): int;
      /** @return array */
-     public function getPage($page): array;
+     public function getPage(int $page = NULL): array;
      /** @return array */
      public function getPages(): array;
      /** @return int */
