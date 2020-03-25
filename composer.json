@@ -1,0 +1,23 @@
+{
+    "name": "soldyi/slimmed",
+    "description": "Slimmer CLI",
+    "type": "composer-plugin",
+    "require-dev": {
+        "fzaninotto/faker": "^1.9",
+        "phpunit/phpunit": "^9.0"
+    },
+    "license": "gpl-3",
+    "authors": [
+        {
+            "name": "501dy",
+            "email": "4786022+Soldy@users.noreply.github.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "soldy\\slimmed\\" :  "src/"
+         }
+
+    },
+    "require": {}
+}
