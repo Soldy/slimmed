@@ -1,12 +1,12 @@
 {
-    "name": "soldyi/slimmed",
+    "name": "soldy/slimmed",
     "description": "Slimmer CLI",
     "type": "composer-plugin",
     "require-dev": {
         "fzaninotto/faker": "^1.9",
         "phpunit/phpunit": "^9.0"
     },
-    "license": "gpl-3",
+    "license": "GPL-3.0-only",
     "authors": [
         {
             "name": "501dy",
