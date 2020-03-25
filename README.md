@@ -1,0 +1,2 @@
+# slimmed
+Slimmed cli
