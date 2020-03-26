@@ -1,4 +1,7 @@
 language: php
+before_script:
+  - composer install --dev
+  - composer dumpautoload
 php:
   - '7.4'
 
