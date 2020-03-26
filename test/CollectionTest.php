@@ -18,7 +18,7 @@ final class CollectionTest extends TestCase
         'iota',
         'kappa',
         'lambda',
-        'mu',
+        'mu', 
         'nu',
         'xi',
         'omicron',
@@ -33,6 +33,7 @@ final class CollectionTest extends TestCase
         'omega'
     ];
     private $pageOne=['delta', 'gamma'];
+    private $pages=[0,1,2,3,4,5,6,7,8,9,10,11];
     public function testPageArray(): void
     {
           $paginator = $this->getMockBuilder(
@@ -60,7 +61,6 @@ final class CollectionTest extends TestCase
               14,
               $paginator->countElements()
           );
-
     }
     public function testFullArray(): void
     {
@@ -74,6 +74,20 @@ final class CollectionTest extends TestCase
           $this->assertEquals(
               $this->fullList,
               $paginator->getElements()
+          );
+    }
+    public function testPages(): void
+    {
+          $paginator = $this->getMockBuilder(
+              Collection::class, 
+              'getPages',
+              $this->fullList
+          )->getMock();
+          $paginator->method('getPages')
+             ->willReturn($this->pages);
+          $this->assertEquals(
+              $this->pages,
+              $paginator->getPages()
           );
 
     }
