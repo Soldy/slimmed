@@ -1,10 +1,13 @@
 <?php
-namespace soldy/slimmed;
+namespace soldy\slimmed;
 
 
 interface TableInterface 
 {
-     public function renser(): string;
+     public function render(
+        int $page,
+        int $elementPerPage
+     ): string;
 }
 
 
