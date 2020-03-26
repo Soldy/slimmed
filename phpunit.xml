@@ -1,0 +1,9 @@
+<phpunit
+   colors="true"
+>
+  <testsuites>
+      <testsuite name="Collection">
+            <file>test/CollectionTest.php</file>
+      </testsuite>
+  </testsuites>
+</phpunit>
